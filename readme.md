@@ -1,0 +1,2 @@
+# **Giconfig**
+## for config git
