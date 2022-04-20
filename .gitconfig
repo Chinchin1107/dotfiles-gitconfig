@@ -1,6 +1,6 @@
 [user]
-        email = chinchin.anawach@gmail.com
-        name = Chinchin
+	email = chinchin.anawach@gmail.com
+	name = Chinchin
 [push]
   default = simple
 [color]
@@ -31,25 +31,26 @@
   edit-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; vim `f`"
   # add conflicted file on merge
   add-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; git add `f`"
-        rma = "remote add origin"
-        pa = "push --all"
-        pt = "push --tags"
+	rma = "remote add origin"
+  pa = "push --all"
+	pt = "push --tags"
+  rma = "remote update"
 [hub]
   protocol = https
 [github]
-        user = chinhchin
+	user = chinhchin
 [diff]
   tool = nvimdiff
 [difftool "nvimdiff"]
-        cmd = nvim -d \"$LOCAL\" \"$REMOTE\"
-        path =
+	cmd = nvim -d \"$LOCAL\" \"$REMOTE\"
+	path = 
 [mergetool "nvimdiff"]
-        cmd = nvim -d \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-        trustExitCode = true
+	cmd = nvim -d \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
 [filter "lfs"]
-        clean = git-lfs clean -- %f
-        smudge = git-lfs smudge -- %f
-        required = true
-        process = git-lfs filter-process
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	required = true
+	process = git-lfs filter-process
 [ghq]
-        root = ~/.ghq
+	root = ~/.ghq
